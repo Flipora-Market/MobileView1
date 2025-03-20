@@ -264,4 +264,29 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.body.contains(document.getElementById("transaction-id"))) {
     loadConfirmation();
   }
+
+<script>
+
+function payWithUPI(provider) {
+    // Show a loading message
+    const paymentSection = document.querySelector(".payment");
+    
+    // Remove any existing loading message before adding a new one
+    let existingMessage = document.getElementById("loading-msg");
+    if (existingMessage) {
+        existingMessage.remove();
+    }
+
+    // Add loading text
+    paymentSection.innerHTML += `<p id="loading-msg">Redirecting to ${provider}... Please wait.</p>`;
+
+    // Get the total amount from the page
+    let amount = document.getElementById("payment-amount").textContent.trim();
+
+    // Construct the UPI payment URL dynamically
+    let upiURL = `upi://pay?ver=01&mode=19&pa=shivashakthi107014.rzp@icici&pn=ShivaShakthi&tr=RZPPaGE7dr2rsDsOjqrv2&cu=INR&mc=
+
+
+
+</script>
 });
