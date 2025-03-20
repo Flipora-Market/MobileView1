@@ -265,36 +265,6 @@ document.addEventListener("DOMContentLoaded", function () {
     loadConfirmation();
   }
 
-<script>
-function payWithUPI(provider) {
-    // Show a loading message
-    const paymentSection = document.querySelector(".payment");
-    
-    if (!paymentSection) {
-        console.error("Payment section not found.");
-        return;
-    }
 
-    // Remove any existing loading message before adding a new one
-    let existingMessage = document.getElementById("loading-msg");
-    if (existingMessage) {
-        existingMessage.remove();
-    }
-
-    // Add loading text
-    paymentSection.innerHTML += `<p id="loading-msg">Redirecting to ${provider}... Please wait.</p>`;
-
-    // Get the total amount from the page
-    let amount = document.getElementById("payment-amount")?.textContent.trim() || "0.00";
-
-    // Construct the UPI payment URL dynamically
-    let upiURL = `upi://pay?ver=01&mode=19&pa=shivashakthi107014.rzp@icici&pn=ShivaShakthi&tr=RZPPaGE7dr2rsDsOjqrv2&cu=INR&mc=5651&tn=Payment&am=${amount}`;
-
-    // Redirect to the UPI payment URL
-    setTimeout(() => {
-        window.location.href = upiURL;
-    }, 2000);
-}
-</script>
 
 });
