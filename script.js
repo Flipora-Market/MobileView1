@@ -264,7 +264,4 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.body.contains(document.getElementById("transaction-id"))) {
     loadConfirmation();
   }
-
-
-
 });
