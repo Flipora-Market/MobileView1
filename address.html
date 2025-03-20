@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shipping Address</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Shipping Address</h1>
+      <nav>
+        <a href="cart.html">Cart</a>
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="address-form">
+      <form id="addressForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required />
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required />
+        <label for="address">Address</label>
+        <textarea id="address" required></textarea>
+        <button type="submit" class="btn">Continue to Payment</button>
+      </form>
+    </section>
+  </main>
+  <script>
+    document.getElementById("addressForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      // (Optional) Save address details to localStorage if needed.
+      window.location.href = "payment.html";
+    });
+  </script>
+</body>
+</html>

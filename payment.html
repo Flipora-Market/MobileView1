@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Payment</h1>
+      <nav>
+        <a href="address.html">Address</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="payment">
+      <p>Total Amount: $<span id="payment-amount">0.00</span></p>
+      <p>Select UPI Payment:</p>
+      <div class="upi-options">
+        <button class="btn" onclick="payWithUPI('GooglePay')">Google Pay</button>
+        <button class="btn" onclick="payWithUPI('PhonePe')">PhonePe</button>
+        <button class="btn" onclick="payWithUPI('Paytm')">Paytm</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

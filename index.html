@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Modern E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Modern E-Commerce</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="about.html">About/Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="product-list">
+      <h2>Featured Products</h2>
+      <div class="products">
+        <!-- 10 Products -->
+        <div class="product" onclick="viewProduct(1)">
+          <img src="https://source.unsplash.com/300x200/?laptop" alt="Gaming Laptop" />
+          <h3>Gaming Laptop</h3>
+          <p>High performance laptop for gaming.</p>
+          <span class="price">$1299.99</span>
+        </div>
+        <div class="product" onclick="viewProduct(2)">
+          <img src="https://source.unsplash.com/300x200/?smartphone" alt="Smartphone" />
+          <h3>Smartphone</h3>
+          <p>Latest smartphone with 5G support.</p>
+          <span class="price">$999.99</span>
+        </div>
+        <div class="product" onclick="viewProduct(3)">
+          <img src="https://source.unsplash.com/300x200/?headphones" alt="Wireless Headphones" />
+          <h3>Wireless Headphones</h3>
+          <p>Noise-canceling, long battery life.</p>
+          <span class="price">$199.99</span>
+        </div>
+        <div class="product" onclick="viewProduct(4)">
+          <img src="https://source.unsplash.com/300x200/?camera" alt="DSLR Camera" />
+          <h3>DSLR Camera</h3>
+          <p>Professional DSLR with high resolution.</p>
+          <span class="price">$799.99</span>
+        </div>
+        <div class="product" onclick="viewProduct(5)">
+          <img src="https://source.unsplash.com/300x200/?watch" alt="Smart Watch" />
+          <h3>Smart Watch</h3>
+          <p>Feature-rich smartwatch with health tracking.</p>
+          <span class="price">$299.99</span>
+        </div>
+        <div class="product" onclick="viewProduct(6)">
+          <img src="https://source.unsplash.com/300x200/?tablet" alt="Tablet" />
+          <h3>Tablet</h3>
+          <p>Portable tablet with high-resolution display.</p>
+          <span class="price">$499.99</span>
+        </div>
+        <div class="product" onclick="viewProduct(7)">
+          <img src="https://source.unsplash.com/300x200/?tv" alt="Smart TV" />
+          <h3>Smart TV</h3>
+          <p>4K Ultra HD Smart TV with voice control.</p>
+          <span class="price">$899.99</span>
+        </div>
+        <div class="product" onclick="viewProduct(8)">
+          <img src="https://source.unsplash.com/300x200/?keyboard" alt="Mechanical Keyboard" />
+          <h3>Mechanical Keyboard</h3>
+          <p>RGB keyboard with tactile feedback.</p>
+          <span class="price">$149.99</span>
+        </div>
+        <div class="product" onclick="viewProduct(9)">
+          <img src="https://source.unsplash.com/300x200/?mouse" alt="Gaming Mouse" />
+          <h3>Gaming Mouse</h3>
+          <p>High precision mouse with adjustable DPI.</p>
+          <span class="price">$79.99</span>
+        </div>
+        <div class="product" onclick="viewProduct(10)">
+          <img src="https://source.unsplash.com/300x200/?speaker" alt="Bluetooth Speaker" />
+          <h3>Bluetooth Speaker</h3>
+          <p>Portable speaker with deep bass.</p>
+          <span class="price">$129.99</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

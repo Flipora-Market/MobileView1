@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Product Details</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="product-details">
+      <div class="slider-container">
+        <div class="slider">
+          <!-- Images will be loaded dynamically -->
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+      <div class="product-info">
+        <h2 id="prod-title">Product Title</h2>
+        <p id="prod-desc">Product description will appear here. It includes detailed features, specifications, and benefits to help customers make an informed decision.</p>
+        <p><strong>Price:</strong> $<span id="prod-price">0.00</span></p>
+        <ul class="features">
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+          <li>Feature 4</li>
+        </ul>
+        <button class="btn" onclick="addToCartFromDetails()">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
